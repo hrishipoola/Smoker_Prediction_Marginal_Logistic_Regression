@@ -1,1 +1,13 @@
-# Smoker_Prediction_Marginal_Logistic_Regression
+Smoker Prediction Marginal Logistic Regression
+
+Last time, we focused on linear models, including OLS, marginal, and multilevel, with the NHANES national health and nutrition data set (https://crawstat.com/2020/06/17/marginal-multilevel-linear-models/). This time, working with the same data set, we'll focus on logistic models, which are used to predict the odds (probability) of an event, in this case the binary categorical variable of whether or not a person has smoked at least 100 cigarettes in their life. We'll first fit a simple binomial logistic regression assuming independent samples and diagnose its probability structure and non-linearity. We'll then fit a marginal logistic model to take into account within-cluster dependencies in NHANES' county-level geographic cluster design.
+
+Part 1: fit and diagnose a logistic regression of smoker status on 5 predictors assuming fully independent samples.
+
+Part 2: visualize and assess probability structure by plotting log odds and odds against select focus variables.
+
+Part 3: visualize and assess non-linearity by generating partial residual, added variable, and CERES plots.
+
+Part 4: fit and compare a marginal logistic model.
+
+We'll fit logistic models as well as diagnose and compare them by interpreting parameters, standard errors, variance, and residual plots. We'll compare both log odds and odds (probability) of someone being a smoker based on their combination of variables. We'll also see within-cluster dependencies in action and how accounting for them helps us develop more accurate and meaningful models. Let's dig in.
